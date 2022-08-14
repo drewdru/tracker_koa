@@ -19,6 +19,10 @@ Change `DATABASE_URL` in `.env` or just run mongo in container
 ```bash
 sudo docker-compose up
 ```
+### Connect to development database
+```bash
+sudo docker-compose exec mongo /bin/mongo --host localhost -u admin -p pwd123 --authenticationDatabase admin tracker_koa
+```
 
 ## Development
 
