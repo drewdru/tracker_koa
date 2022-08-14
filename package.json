@@ -1,0 +1,37 @@
+{
+  "name": "tracker-koa",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "~16.15.0",
+    "npm": ">=8.5.5"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@koa/cors": "2",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.23.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-watch": "^8.0.0",
+    "nodemon": "^2.0.19",
+    "prettier": "2.7.1"
+  }
+}
